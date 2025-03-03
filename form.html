@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1> Contact Form </h1>
+
+    <form method="POST" action="https://wp.zybooks.com/form-viewer.php" enctype="multipart/form-data">
+        <div>
+            <label for="fullName">Full name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+         </div>
+    
+        <div>
+            <label for="email">Email adress:</label>
+            <input type="text" id="email" name="email" required>
+        </div>
+    
+        <div>
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="number" id="phoneNumber" name="phoneNumber" required>
+         </div>
+
+
+        <div>
+            <label for="about">Message:</label>
+            <textarea id="about" name="about" cols="50" rows="3"></textarea>
+             </div>
+        
+        <div>
+            <label for="picture">Photo:</label>
+            <input type="file" id="picture" name="picture">
+        </div>
+        
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    
+    </form>
+<h2> Thanks For Contacting Us!</h2>
+    <nav>
+        <ul>
+            <li> <a href="index.html">Home</a> </li> 
+            <li><a href="index.html">Visitor Information</a> </li>
+            <li><a href="index.html">Activicties & Trails</a> </li>
+            <li><a href="secondPage.html">Events & Programs</a> </li>
+            <li><a href="secondPage.html">Conservation Efforts</a> </li>
+            <li> <a href="form.html">Contact Page</a> </li>
+        </ul>
+    </nav>
+</body>
+
+</html>

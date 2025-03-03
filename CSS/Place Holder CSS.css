@@ -1,0 +1,36 @@
+/* General Styles */
+body {
+    /* Add styles for body */
+}
+
+/* Navigation */
+nav {
+    /* Add styles for navigation */
+}
+
+nav ul {
+    /* Add styles for the unordered list */
+}
+
+nav li {
+    /* Add styles for list items */
+}
+
+nav a {
+    /* Add styles for links */
+}
+
+/* Main Content */
+main {
+    /* Add styles for main content */
+}
+
+/* Footer */
+footer {
+    /* Add styles for footer */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    /* Add styles for smaller screens */
+}
