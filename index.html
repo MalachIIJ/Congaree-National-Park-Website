@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9PT3SPZF9M"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -9,80 +9,175 @@
         gtag('js', new Date());
         gtag('config', 'G-9PT3SPZF9M');
     </script>
-<style type="text/css">
-    header, section, footer, aside, nav, article, figure, figcaption {display: block;}
 
-    body 
-    {
-
-        background-image: url("Images/cnp.jpg");
-      
-    }
-    </style>
-
-    <link rel="stylesheet" href="CSS/style.css">
-    <title>Congaree National Park</title>
-    
+    <!-- Meta Tags -->
     <meta charset="UTF-8">
-    <meta name="description" content="Website for the Congaree National Park">
-    <meta name="keywords" content="South Carolina National Park, Congaree">
-    <meta name="author" content="Malachi Johnson">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official guide to Congaree National Park - featuring hiking trails, canoeing, wildlife viewing, and conservation efforts in South Carolina's largest old-growth floodplain forest">
+    <meta name="keywords" content="Congaree National Park, South Carolina parks, hiking trails, canoeing, wildlife, conservation">
+    <meta name="author" content="Malachi Johnson">
+    <meta name="theme-color" content="#2c3e50">
+    <meta property="og:title" content="Congaree National Park | Explore Nature's Wonder">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://malachiij.github.io/Congaree-National-Park-Website/">
+    
+    <title>Congaree National Park | Explore Nature's Wonder</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="Images/logo.jpg" type="image/jpg">
 </head>
 <body>
-    <header>
-        <h1><img src="Images/logo.jpg" alt="Congaree National Park Logo" width="100" height="80"></h1>
-        <h2>Welcome to Congaree National Park</h2>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="secondPage.html">Events & Programs</a></li>
-                <li><a href="form.html">Contact Page</a></li>
-            </ul>
-        </nav>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header role="banner">
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="Images/logo.jpg" alt="Congaree National Park Logo" width="100" height="80">
+                <h1>Congaree National Park</h1>
+            </div>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="secondPage.html">Events & Programs</a></li>
+                    <li><a href="form.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="hero">
+            <div class="hero-content">
+                <h2>Discover South Carolina's Natural Treasure</h2>
+                <p>Explore the largest intact expanse of old-growth bottomland hardwood forest in the United States</p>
+                <a href="#explore" class="cta-button">Start Exploring</a>
+            </div>
+        </div>
     </header>
 
-    <main>
-        <section>
-            <article class="card">
-                <p>Congaree National Park is one of South Carolina’s hidden natural gems, offering visitors a chance to explore the largest intact expanse of old-growth bottomland hardwood forest in the United States. Whether you’re here to hike through the towering trees, paddle along Cedar Creek, or experience the park’s incredible biodiversity, this website is your guide to planning the perfect trip.</p>
-                <img src="Images/BG.jpg" alt="Congaree National Park" width="400" height="200">
-            </article>
-        </section>
-
-        <section>
-            <article class="card">
-                <h3>Hours of Operation</h3>
-                <p>Park: 24/7, year round</p>
-                <p>Harry Hampton Visitor Center: 9:00 AM - 5:00 PM (Closed on major holidays).</p>
-                <p>Free Admissions</p>
-            </article>
-
-            <article class="card">
-                <h3>Hiking & Walking Trails</h3>
-                <p>Boardwalk Loop Trail (2.4 miles, easy) – A scenic, elevated walkway through the forest.</p>
-                <p>Weston Lake Loop Trail (4.4 miles, moderate) – A beautiful loop passing by Weston Lake and floodplain habitat.</p>
-                <p>Kingsnake Trail (11.7 miles, difficult) – Ideal for birdwatchers and those looking for a longer adventure.</p>
-            </article>
-
-            <article class="card">
-                <h3>Canoeing & Kayaking</h3>
-                <p>One of the best ways to experience Congaree is from the water. Paddle along Cedar Creek to see the park’s towering cypress trees, spot river otters, and enjoy the peaceful surroundings. Bring your own canoe/kayak or rent from a local outfitter.</p>
-            </article>
-
-            <article class="card">
-                <h3>Wildlife Viewing & Photography</h3>
-                <p>Congaree is home to a wide variety of wildlife, including deer, bobcats, barred owls, and even alligators. The park’s remote setting makes it a great spot for birdwatching and nature photography.</p>
-            </article>
+    <main id="main-content" role="main">
+        <section id="explore" class="intro-section">
+            <div class="container">
+                <article class="feature-card" style="padding: 40px; text-align: left;">
+                    <h2 style="text-align: center; margin-bottom: 30px; color: var(--primary-color);">Welcome to Congaree National Park</h2>
+                    
+                    <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 30px; text-align: center; font-weight: 500;">
+                        Congaree National Park protects the largest remnant of old-growth floodplain forest in North America, preserving an ecosystem that has all but disappeared from the southern United States.
+                    </p>
+                    
+                    <div style="display: flex; gap: 30px; margin: 40px 0; align-items: center;">
+                        <div style="flex: 1;">
+                            <h3 style="color: var(--primary-color); margin-bottom: 20px;">A Wilderness Like No Other</h3>
+                            <p style="margin-bottom: 15px;">Designated as a National Park in 2003, Congaree's 26,000 acres of pristine wilderness contain some of the tallest trees in eastern North America, with champion specimens reaching record heights.</p>
+                            <ul style="margin-left: 20px;">
+                                <li style="margin-bottom: 10px;">Loblolly pines over 170 feet tall</li>
+                                <li style="margin-bottom: 10px;">Ancient bald cypress trees</li>
+                                <li style="margin-bottom: 10px;">Diverse sweetgum and oak species</li>
+                            </ul>
+                        </div>
+                        <div style="flex: 1;">
+                            <img src="Images/Tall.jpg" alt="Towering trees in Congaree" style="width: 100%; border-radius: 8px; box-shadow: var(--box-shadow);">
+                        </div>
+                    </div>
+                    
+                    <div style="background: rgba(52, 152, 219, 0.1); padding: 30px; border-radius: 8px; margin: 40px 0;">
+                        <h3 style="text-align: center; color: var(--primary-color); margin-bottom: 20px;">A Unique Floodplain Ecosystem</h3>
+                        <p style="margin-bottom: 20px; text-align: center;">The park's floodplain forest experiences regular flooding from the Congaree and Wateree Rivers, creating a rich habitat for diverse plant and animal life.</p>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                            <div style="background: white; padding: 20px; border-radius: 8px; text-align: center; box-shadow: var(--box-shadow);">
+                                <div style="font-size: 2.5rem; margin-bottom: 15px;">🌳</div>
+                                <h4 style="color: var(--primary-color);">75+ Tree Species</h4>
+                                <p>Highest concentration in North America</p>
+                            </div>
+                            <div style="background: white; padding: 20px; border-radius: 8px; text-align: center; box-shadow: var(--box-shadow);">
+                                <div style="font-size: 2.5rem; margin-bottom: 15px;">🦅</div>
+                                <h4 style="color: var(--primary-color);">170 Bird Species</h4>
+                                <p>Including rare migratory birds</p>
+                            </div>
+                            <div style="background: white; padding: 20px; border-radius: 8px; text-align: center; box-shadow: var(--box-shadow);">
+                                <div style="font-size: 2.5rem; margin-bottom: 15px;">🐊</div>
+                                <h4 style="color: var(--primary-color);">Wildlife Diversity</h4>
+                                <p>60+ reptile/amphibian species</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="margin: 40px 0;">
+                        <h3 style="text-align: center; color: var(--primary-color); margin-bottom: 30px;">Plan Your Adventure</h3>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                            <div style="background: white; border-radius: 8px; overflow: hidden; box-shadow: var(--box-shadow); transition: var(--transition);">
+                                <img src="Images/Walk.jpg" alt="Boardwalk trail" style="width: 100%; height: 200px; object-fit: cover;">
+                                <div style="padding: 20px;">
+                                    <h4 style="color: var(--primary-color); margin-bottom: 10px;">Hiking Trails</h4>
+                                    <p style="margin-bottom: 15px;">Explore over 25 miles of trails through ancient forests, including the famous Boardwalk Loop.</p>
+                                    <a href="secondPage.html#hiking" style="display: inline-block; background: var(--secondary-color); color: white; padding: 8px 20px; border-radius: 4px; font-weight: 600;">View Trails</a>
+                                </div>
+                            </div>
+                            
+                            <div style="background: white; border-radius: 8px; overflow: hidden; box-shadow: var(--box-shadow); transition: var(--transition);">
+                                <img src="Images/Can.jpg" alt="Canoeing" style="width: 100%; height: 200px; object-fit: cover;">
+                                <div style="padding: 20px;">
+                                    <h4 style="color: var(--primary-color); margin-bottom: 10px;">Canoeing & Kayaking</h4>
+                                    <p style="margin-bottom: 15px;">Paddle through the floodplain forest on Cedar Creek's marked canoe trails.</p>
+                                    <a href="secondPage.html#canoeing" style="display: inline-block; background: var(--secondary-color); color: white; padding: 8px 20px; border-radius: 4px; font-weight: 600;">Learn More</a>
+                                </div>
+                            </div>
+                            
+                            <div style="background: white; border-radius: 8px; overflow: hidden; box-shadow: var(--box-shadow); transition: var(--transition);">
+                                <img src="Images/bird.jpg" alt="Wildlife viewing" style="width: 100%; height: 200px; object-fit: cover;">
+                                <div style="padding: 20px;">
+                                    <h4 style="color: var(--primary-color); margin-bottom: 10px;">Wildlife Viewing</h4>
+                                    <p style="margin-bottom: 15px;">Spot rare species like the prothonotary warbler and river otters.</p>
+                                    <a href="secondPage.html#wildlife" style="display: inline-block; background: var(--secondary-color); color: white; padding: 8px 20px; border-radius: 4px; font-weight: 600;">View Wildlife</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <ul>
-            <li><img src="Images/Copyright.png" alt="Copyright" width="40" height="40"></li>
-            <li><img src="Images/Insta.jpg" alt="Instagram" width="40" height="40"></li>
-            <li>Contact Info</li>
-        </ul>
+    <footer role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="Images/logo.jpg" alt="Congaree National Park Logo" width="80" height="64">
+                <p>Protecting South Carolina's natural heritage since 2003</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="secondPage.html">Events</a></li>
+                    <li><a href="form.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Connect With Us</h3>
+                <ul>
+                    <li><a href="#"><img src="Images/Insta.jpg" alt="Instagram" width="30" height="30"></a></li>
+                    <li><a href="#"><img src="Images/Facebook.png" alt="Facebook" width="30" height="30"></a></li>
+                    <li><a href="#"><img src="Images/x.png" alt="X" width="30" height="30"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Congaree National Park. All rights reserved.</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Accessibility</a></p>
+        </div>
     </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>

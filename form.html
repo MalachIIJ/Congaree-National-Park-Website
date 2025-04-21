@@ -1,87 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9PT3SPZF9M"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-9PT3SPZF9M');
-    </script>
-
-
-<style type="text/css">
-    header, section, footer, aside, nav, article, figure, figcaption {display: block;}
-
-    body 
-    {
-
-        background-image: url("Images/cnp.jpg");
-      
-    }
-    </style>
-
-
-
-    <link rel="stylesheet" href="CSS/style.css">
-    <title>Contact Form</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="Contact form for Congaree National Park">
-    <meta name="keywords" content="Congaree National Park, Contact, Form">
-    <meta name="author" content="Malachi Johnson">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Contact Us | Congaree National Park</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="icon" href="Images/logo.jpg" type="image/jpg">
 </head>
 <body>
-    <header>
-        <h1>Contact Form</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="secondPage.html">Events & Programs</a></li>
-                <li><a href="form.html">Contact Page</a></li>
-            </ul>
-        </nav>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header role="banner">
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="Images/logo.jpg" alt="Congaree National Park Logo" width="100" height="80">
+                <h1>Congaree National Park</h1>
+            </div>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="secondPage.html">Events & Programs</a></li>
+                    <li><a href="form.html" aria-current="page">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section class="card">
-            <form method="POST" action="https://wp.zybooks.com/form-viewer.php" enctype="multipart/form-data">
-                <div>
-                    <label for="fullName">Full Name:</label>
-                    <input type="text" id="fullName" name="fullName" required>
-                </div>
-                <div>
-                    <label for="email">Email Address:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div>
-                    <label for="phoneNumber">Phone Number:</label>
-                    <input type="tel" id="phoneNumber" name="phoneNumber" required>
-                </div>
-                <div>
-                    <label for="about">Message:</label>
-                    <textarea id="about" name="about" cols="50" rows="3"></textarea>
-                </div>
-                <div>
-                    <label for="picture">Upload Photo:</label>
-                    <input type="file" id="picture" name="picture">
-                </div>
-                <div>
-                    <input type="submit" value="Submit">
-                </div>
-            </form>
-        </section>
+    <main id="main-content" role="main">
+        <section class="form-section">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>If you have any questions, feedback, or want to plan a visit, fill out the form below.</p>
 
-        
+                <form action="https://formspree.io/f/your-form-id" method="POST">
+                    <label for="name">Name<span aria-hidden="true">*</span>:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email<span aria-hidden="true">*</span>:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject">
+
+                    <label for="message">Message<span aria-hidden="true">*</span>:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <ul>
-            <li><img src="Images/Copyright.png" alt="Copyright" width="40" height="40"></li>
-            <li><img src="Images/Insta.jpg" alt="Instagram" width="40" height="40"></li>
-            <li>Contact Info</li>
-        </ul>
+    <footer role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="Images/logo.jpg" alt="Congaree National Park Logo" width="80" height="64">
+                <p>Protecting South Carolina's natural heritage since 2003</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="secondPage.html">Events</a></li>
+                    <li><a href="form.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Connect With Us</h3>
+                <ul>
+                    <li><a href="#"><img src="Images/Insta.jpg" alt="Instagram" width="30" height="30"></a></li>
+                    <li><a href="#"><img src="Images/Facebook.png" alt="Facebook" width="30" height="30"></a></li>
+                    <li><a href="#"><img src="Images/x.png" alt="X" width="30" height="30"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Congaree National Park. All rights reserved.</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Accessibility</a></p>
+        </div>
     </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
