@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta and links same as index.html -->
+    <!-- Meta and stylesheet links -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Park Features | Congaree National Park</title>
@@ -9,8 +9,10 @@
     <link rel="icon" href="Images/logo.jpg" type="image/jpg">
 </head>
 <body>
+    <!-- Accessibility skip link -->
     <a class="skip-link" href="#main-content">Skip to main content</a>
 
+    <!-- Site header with logo and navigation -->
     <header role="banner">
         <div class="header-container">
             <div class="logo-container">
@@ -25,6 +27,8 @@
                 </ul>
             </nav>
         </div>
+
+        <!-- Hero banner section -->
         <div class="hero">
             <div class="hero-content">
                 <h2>Events & Programs</h2>
@@ -33,11 +37,15 @@
         </div>
     </header>
 
+    <!-- Main content of the page -->
     <main id="main-content" role="main">
+
+        <!-- Events and ranger programs section -->
         <section class="features-section">
             <div class="container">
                 <h2 class="section-title">Upcoming Events & Ranger Programs</h2>
                 <div class="card-grid">
+                    <!-- Event: Firefly Festival -->
                     <article class="feature-card" id="hiking">
                         <div class="card-icon">
                             <span role="img" aria-label="Firefly icon">✨</span>
@@ -46,6 +54,7 @@
                         <p><strong>May-June</strong> – Experience the rare and breathtaking sight of synchronous fireflies lighting up the forest at night. Evening programs include guided walks and photography tips.</p>
                     </article>
 
+                    <!-- Event: Guided Canoe Tours -->
                     <article class="feature-card" id="canoeing">
                         <div class="card-icon">
                             <span role="img" aria-label="Canoe icon">🛶</span>
@@ -54,6 +63,7 @@
                         <p>Join a park ranger for an educational paddle along Cedar Creek. Learn about the floodplain ecosystem while spotting wildlife. Tours available weekends April through October.</p>
                     </article>
 
+                    <!-- Program: Junior Ranger -->
                     <article class="feature-card">
                         <div class="card-icon">
                             <span role="img" aria-label="Ranger badge icon">🏅</span>
@@ -62,6 +72,7 @@
                         <p>A fun and interactive way for kids to learn about the park and earn a badge. Activities include nature scavenger hunts and wildlife bingo. Available daily at the Visitor Center.</p>
                     </article>
 
+                    <!-- Event: Stargazing -->
                     <article class="feature-card" id="wildlife">
                         <div class="card-icon">
                             <span role="img" aria-label="Star icon">⭐</span>
@@ -73,10 +84,12 @@
             </div>
         </section>
 
+        <!-- Conservation efforts section -->
         <section class="features-section" style="background-color: #f5f9fc; padding: 60px 0;">
             <div class="container">
                 <h2 class="section-title">Conservation & Preservation Efforts</h2>
                 <div class="card-grid">
+                    <!-- Conservation: Habitat Restoration -->
                     <article class="feature-card">
                         <div class="card-icon">
                             <span role="img" aria-label="Tree icon">🌳</span>
@@ -85,6 +98,7 @@
                         <p>Protecting and maintaining the park's old-growth trees and wetlands. Ongoing projects include invasive species removal and reforestation of damaged floodplain areas.</p>
                     </article>
 
+                    <!-- Conservation: Wildlife Monitoring -->
                     <article class="feature-card">
                         <div class="card-icon">
                             <span role="img" aria-label="Binoculars icon">🔭</span>
@@ -93,6 +107,7 @@
                         <p>Tracking populations of key species like the endangered Red-cockaded Woodpecker to ensure ecological balance. Citizen science programs available for visitors.</p>
                     </article>
 
+                    <!-- Conservation: Community Engagement -->
                     <article class="feature-card">
                         <div class="card-icon">
                             <span role="img" aria-label="People icon">👥</span>
@@ -101,6 +116,7 @@
                         <p>Partnering with local schools and organizations to promote conservation. Educational programs reach over 5,000 students annually with hands-on nature experiences.</p>
                     </article>
 
+                    <!-- Conservation: Scientific Research -->
                     <article class="feature-card">
                         <div class="card-icon">
                             <span role="img" aria-label="Research icon">📊</span>
@@ -112,6 +128,7 @@
             </div>
         </section>
 
+        <!-- Call-to-action section encouraging visitors -->
         <section class="cta-section">
             <div class="container">
                 <h2>Ready to Explore?</h2>
@@ -124,6 +141,7 @@
         </section>
     </main>
 
+    <!-- Page footer with quick links and social media -->
     <footer role="contentinfo">
         <div class="footer-container">
             <div class="footer-logo">
@@ -147,12 +165,14 @@
                 </ul>
             </div>
         </div>
+        <!-- Copyright and legal links -->
         <div class="footer-bottom">
             <p>&copy; <span id="year"></span> Congaree National Park. All rights reserved.</p>
             <p><a href="#">Privacy Policy</a> | <a href="#">Accessibility</a></p>
         </div>
     </footer>
 
+    <!-- Script to dynamically display the current year -->
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>

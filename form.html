@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+        <!-- Sets character encoding and viewport for responsiveness -->
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!-- Page title and links to CSS and favicon -->
+
     <title>Contact Us | Congaree National Park</title>
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="icon" href="Images/logo.jpg" type="image/jpg">
 </head>
 <body>
+        <!-- Skip link for accessibility -->
+
     <a class="skip-link" href="#main-content">Skip to main content</a>
+
+        <!-- Header with logo and navigation -->
 
     <header role="banner">
         <div class="header-container">
             <div class="logo-container">
+                                <!-- Park logo and title -->
+
                 <img src="Images/logo.jpg" alt="Congaree National Park Logo" width="100" height="80">
                 <h1>Congaree National Park</h1>
             </div>
+                        <!-- Main navigation links -->
+
             <nav aria-label="Main navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -25,31 +37,42 @@
             </nav>
         </div>
     </header>
+    <!-- Main content area -->
 
     <main id="main-content" role="main">
         <section class="form-section">
             <div class="container">
+                                <!-- Contact section title and instructions -->
+
                 <h2>Contact Us</h2>
                 <p>If you have any questions, feedback, or want to plan a visit, fill out the form below.</p>
+                <!-- Contact form submission -->
 
                 <form action="https://formspree.io/f/your-form-id" method="POST">
+                     <!-- Name input -->
+
                     <label for="name">Name<span aria-hidden="true">*</span>:</label>
                     <input type="text" id="name" name="name" required>
+                    <!-- Email input -->
 
                     <label for="email">Email<span aria-hidden="true">*</span>:</label>
                     <input type="email" id="email" name="email" required>
+                    <!-- Subject input -->
 
                     <label for="subject">Subject:</label>
                     <input type="text" id="subject" name="subject">
+                    <!-- Message text area -->
 
                     <label for="message">Message<span aria-hidden="true">*</span>:</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
+                    <!-- Submit button -->
 
                     <button type="submit" class="cta-button">Send Message</button>
                 </form>
             </div>
         </section>
     </main>
+    <!-- Footer section -->
 
     <footer role="contentinfo">
         <div class="footer-container">
@@ -57,6 +80,8 @@
                 <img src="Images/logo.jpg" alt="Congaree National Park Logo" width="80" height="64">
                 <p>Protecting South Carolina's natural heritage since 2003</p>
             </div>
+                        <!-- Quick navigation links -->
+
             <div class="footer-links">
                 <h3>Quick Links</h3>
                 <ul>
@@ -65,6 +90,8 @@
                     <li><a href="form.html">Contact</a></li>
                 </ul>
             </div>
+                        <!-- Social media icons -->
+
             <div class="footer-social">
                 <h3>Connect With Us</h3>
                 <ul>
@@ -74,11 +101,16 @@
                 </ul>
             </div>
         </div>
+                <!-- Footer bottom section -->
+
         <div class="footer-bottom">
+                        <!-- Dynamic year and legal links -->
+
             <p>&copy; <span id="year"></span> Congaree National Park. All rights reserved.</p>
             <p><a href="#">Privacy Policy</a> | <a href="#">Accessibility</a></p>
         </div>
     </footer>
+    <!-- JavaScript for auto-updating year -->
 
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();

@@ -21,6 +21,8 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://malachiij.github.io/Congaree-National-Park-Website/">
     
+        <!-- Page title and links to styles and fonts -->
+
     <title>Congaree National Park | Explore Nature's Wonder</title>
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,9 +31,13 @@
     <link rel="icon" href="Images/logo.jpg" type="image/jpg">
 </head>
 <body>
+        <!-- Accessibility skip link -->
+
     <a class="skip-link" href="#main-content">Skip to main content</a>
 
     <header role="banner">
+                <!-- Header with logo and navigation -->
+
         <div class="header-container">
             <div class="logo-container">
                 <img src="Images/logo.jpg" alt="Congaree National Park Logo" width="100" height="80">
@@ -45,6 +51,8 @@
                 </ul>
             </nav>
         </div>
+                <!-- Hero section with intro text -->
+
         <div class="hero">
             <div class="hero-content">
                 <h2>Discover South Carolina's Natural Treasure</h2>
@@ -55,15 +63,21 @@
     </header>
 
     <main id="main-content" role="main">
+                <!-- Intro section with welcome text -->
+
         <section id="explore" class="intro-section">
             <div class="container">
                 <article class="feature-card" style="padding: 40px; text-align: left;">
                     <h2 style="text-align: center; margin-bottom: 30px; color: var(--primary-color);">Welcome to Congaree National Park</h2>
-                    
+                                   
+                    <!-- Park description -->
+
                     <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 30px; text-align: center; font-weight: 500;">
                         Congaree National Park protects the largest remnant of old-growth floodplain forest in North America, preserving an ecosystem that has all but disappeared from the southern United States.
                     </p>
                     
+                    <!-- Section about the forest and trees -->
+
                     <div style="display: flex; gap: 30px; margin: 40px 0; align-items: center;">
                         <div style="flex: 1;">
                             <h3 style="color: var(--primary-color); margin-bottom: 20px;">A Wilderness Like No Other</h3>
@@ -74,15 +88,21 @@
                                 <li style="margin-bottom: 10px;">Diverse sweetgum and oak species</li>
                             </ul>
                         </div>
+                                                <!-- Image of tall trees -->
+
                         <div style="flex: 1;">
                             <img src="Images/Tall.jpg" alt="Towering trees in Congaree" style="width: 100%; border-radius: 8px; box-shadow: var(--box-shadow);">
                         </div>
                     </div>
                     
+                                        <!-- Section on floodplain ecosystem -->
+
                     <div style="background: rgba(52, 152, 219, 0.1); padding: 30px; border-radius: 8px; margin: 40px 0;">
                         <h3 style="text-align: center; color: var(--primary-color); margin-bottom: 20px;">A Unique Floodplain Ecosystem</h3>
                         <p style="margin-bottom: 20px; text-align: center;">The park's floodplain forest experiences regular flooding from the Congaree and Wateree Rivers, creating a rich habitat for diverse plant and animal life.</p>
                         
+                                                <!-- Biodiversity icons and stats -->
+
                         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
                             <div style="background: white; padding: 20px; border-radius: 8px; text-align: center; box-shadow: var(--box-shadow);">
                                 <div style="font-size: 2.5rem; margin-bottom: 15px;">🌳</div>
@@ -102,10 +122,17 @@
                         </div>
                     </div>
                     
+                                        <!-- Planning your adventure section -->
+
                     <div style="margin: 40px 0;">
                         <h3 style="text-align: center; color: var(--primary-color); margin-bottom: 30px;">Plan Your Adventure</h3>
                         
+                                                <!-- Grid of cards for activities -->
+
                         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+
+                                                        <!-- Hiking card -->
+
                             <div style="background: white; border-radius: 8px; overflow: hidden; box-shadow: var(--box-shadow); transition: var(--transition);">
                                 <img src="Images/Walk.jpg" alt="Boardwalk trail" style="width: 100%; height: 200px; object-fit: cover;">
                                 <div style="padding: 20px;">
@@ -115,6 +142,8 @@
                                 </div>
                             </div>
                             
+                                                        <!-- Canoeing card -->
+
                             <div style="background: white; border-radius: 8px; overflow: hidden; box-shadow: var(--box-shadow); transition: var(--transition);">
                                 <img src="Images/Can.jpg" alt="Canoeing" style="width: 100%; height: 200px; object-fit: cover;">
                                 <div style="padding: 20px;">
@@ -123,7 +152,8 @@
                                     <a href="secondPage.html#canoeing" style="display: inline-block; background: var(--secondary-color); color: white; padding: 8px 20px; border-radius: 4px; font-weight: 600;">Learn More</a>
                                 </div>
                             </div>
-                            
+                                                        <!-- Wildlife card -->
+
                             <div style="background: white; border-radius: 8px; overflow: hidden; box-shadow: var(--box-shadow); transition: var(--transition);">
                                 <img src="Images/bird.jpg" alt="Wildlife viewing" style="width: 100%; height: 200px; object-fit: cover;">
                                 <div style="padding: 20px;">
@@ -138,6 +168,8 @@
             </div>
         </section>
     </main>
+
+                                <!--Footer -->
 
     <footer role="contentinfo">
         <div class="footer-container">
@@ -167,6 +199,8 @@
             <p><a href="#">Privacy Policy</a> | <a href="#">Accessibility</a></p>
         </div>
     </footer>
+
+                                <!-- JS -->
 
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
